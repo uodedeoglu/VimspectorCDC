@@ -11,7 +11,7 @@ if exists("g:loaded_VimspectorCDC")
 endif
 let g:loaded_VimspectorCDC = 1
 
-nnoremap <leader> cccp :call copy_config#CopyConfigFile('cpp')<CR>
+nnoremap <leader>cccp :call copy_config#CopyConfigFile('cpp')<CR>
 
 command! -nargs=1 CDCCopyDefaultConfig call VimspectorCDC#CopyConfigFile(<f-args>)
 command! -nargs=0 CDCCopyDefaultConfigCPP call VimspectorCDC#CopyConfigFile()
