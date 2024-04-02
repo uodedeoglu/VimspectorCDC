@@ -15,7 +15,7 @@ function! VimspectorCDC#CopyConfigFile(fileName)
     endif
 
     " Copy the file
-    let copy_command = 'silent! !cp ' . shellescape(source_file) . ' ' . shellescape(destination_file)
+    let copy_command = 'cp ' . shellescape(source_file) . ' ' . shellescape(destination_file)
     if system(copy_command) != 0
         echo "Error: Unable to copy file"
         return
